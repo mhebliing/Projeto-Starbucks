@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<div class="verde"></div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
+    <link rel="stylesheet" href="style.css">
+    <title>Starbucks</title>
+</head>
+
+<body>
+
+    <img src="logo.png" alt="copo logo">
+
+    <div class="conteudo">
+        <div class="caixa-texto">
+            <h2>Não é so um café, é um <span>Starbucks</span></h2>
+            <p>Naquela época, a empresa era uma única loja no histórico Pike Place Market de Seattle. Em sua fachada
+                estreita, a Starbucks oferecia alguns dos melhores cafés em</p>
+            <button>Clique Aqui</button>
+        </div>
+        <div class="caixa-imagem">
+            <img src="img1.png" alt="copo Starbucks" class="starbucks">
+        </div>
+    </div>
+
+    <div class="menu">
+        <img src="img-pequena1.png" alt="copo primeiro" class="copo-pequeno verde">
+        <img src="img-pequena2.png" alt="copo segundo" class="copo-pequeno amarelo">
+        <img src="img-pequena3.png" alt=" copo terceiro" class="copo-pequeno rosa">
+        
+    
+<div class="circulo"></div>
+
+
+</body>
+ 
+<script>
+let circulo= document.querySelector(".circulo")
+   let starbucks = document.querySelector (".starbucks")
+ let verde = document.querySelector (".verde")
+ let amarelo = document.querySelector (".amarelo")
+ let rosa = document.querySelector (".rosa")
+
+amarelo.addEventListener("click", () => {
+   starbucks.src="img2.png"
+   circulo.style.background= "#eb7495"
+})
+
+rosa.addEventListener("click", () => {
+    starbucks.src="img3.png"
+    circulo.style.background= "#d752b1"
+} )
+
+verde.addEventListener("click", () => {
+    starbucks.src="img1.png"
+    circulo.style.background="#129335"
+})
+
+</script>
+
+
+
+</html>
